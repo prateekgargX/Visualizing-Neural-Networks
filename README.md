@@ -1,1 +1,1 @@
-# -Visualizing-Neural-Networks
+# Visualizing-Neural-Networks
