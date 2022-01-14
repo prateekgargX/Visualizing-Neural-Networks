@@ -1,0 +1,16 @@
+\section{Introduction}
+
+
+
+
+
+
+There are some prediction tasks where the output labels are discrete and are periodic. For example, consider the problem of pose estimation. Although pose can be a continuous variable, in practice, it is often discretized $e.g.$, in 5-degree intervals. Because of the periodic nature of pose, a 355-degree label is closer to 0-degree label than the 10-degree label. Thus it is important to consider the periodic and discrete nature of the pose classification problem.
+
+
+%\begin{figure}[t]
+%\centering
+%\includegraphics[width=8.3cm]{fig//figx.pdf}\\
+%\caption{The limitation of CE loss for pose estimation. The ground truth direction of the car is $t_j \ast$. Two possible softmax predictions (green bar) of the pose estimator have the same probability at $t_j \ast$ position. Therefore, both predicted distributions have the same CE loss. However, the left prediction is preferable to the right, since we desire the predicted probability distribution to be larger and closer to the ground truth class.}\label{fig:1} 
+%\end{figure}
+
