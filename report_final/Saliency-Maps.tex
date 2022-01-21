@@ -1,0 +1,19 @@
+\subsection{Saliency Maps}
+
+Let us review the method used by the authors in the original paper \cite{saliency}. Given a specific class, we query a Convolutional net about the spatial support of that particular class in the image. Formally, let $I$ be the image and let $\mathfrak{S}$ be the image space. We have the vectorizing function
+\[L: \mathfrak{S} \to \mathbb{R}^{k\times1}\]
+Thus $L(I)$ is the vectorized version of the image. With abuse of notation, let us denote this as $I$. Further for a class $c$ we have the score function
+\[S_c: \mathbb{R}^{k\times1} \to \mathbb{R}\]
+We consider the linear approximation,
+\[S_c(I) \approx w_c^TI + b_c \text{ , where, } w_c^T \in \mathbb{R}^{k\times1}, b_c \in \mathbb{R}\]
+Elementary calculus tells us that,
+\[w_c = \frac{\delta S_c}{\delta I}\]
+Now the authors claim that this matrix gives us an idea of which spatial locations the network is looking at while predicting the class to be $c$. This is backed by the intuition that the larger the derivative for a particular pixel, more the output is sensitive to that pixel. \\ 
+Computationally, we arrive at the map as follows. Assume the input shape is $m \times n$. \begin{enumerate}
+\item Firstly, the derivative vector is found by backpropagation.
+\item Then, the vector is arranged in the same shape as the input image. Denote this $w_{i,j,c}$, where $i \in \{1,2 \dots m\}, j \in \{1,2 \dots n\}$ correspond to the x-y directions, and $c$ to the channel.
+\item For all $i \in \{1,2 \dots m\}, j \in \{1,2 \dots n\}$, define $$\mathfrak{M}_{i,j} := max_c|w_{i,j,c}|$$
+\end{enumerate}
+Then, $\mathfrak{M}$ is the desired saliency map. 
+Positive gradients corresponds to the location of target object and Negative image gradients corresponds to the other objects of competing classes. 
+Since for the final output we use absolute value, saliency maps are not class discriminative.   

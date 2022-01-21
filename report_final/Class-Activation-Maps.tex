@@ -1,0 +1,14 @@
+\subsection{Class Activation Map (CAM)}
+A class activation map for a particular category indicates the discriminative image regions used by the CNN to identify that category. The authors of the paper \cite{CAM} define this in the following way. For a given image, let $f_k(x,y)$ represent the activation of unit $k$ in the last convolutional layer at spatial location $(x,y)$. Then, for the unit $k$ global average pooling is given as \[F_k := \sum_{(x,y)}f_k(x,y)\]
+Now say we have the final softmax layer. Then, for some class $c$, the input to the softmax $S_c$ is 
+\[S_c := \sum_k w_k^cF_k\]
+Intuitively, the importance of $F_k$ in computing $S_c$ is given by the weight $w_k^c$. We have,
+\begin{align}
+S_c &= \sum_kw_k^c\left(\sum_{(x,y)}f_k(x,y)\right) \\ 
+S_c &= \sum_{(x,y)}\sum_kw_k^cf_k(x,y) 
+\end{align}
+Then we define $\mathfrak{K}_c$, the class activation map for class $c$ as
+\[\mathfrak{K}_c(x,y) := \sum_kw_k^cf_k(x,y)\]
+Thus we claim that $\mathfrak{K}_c(x,y)$ indicates the importance of the activation at the spatial grid point $(x,y)$ leading to the activation of class $c$. This is because
+\[S_c = \sum_{(x,y)}\mathfrak{K}_c(x,y)\]
+Thus,The class activation map is simply a weighted linear sum of the presence of these visual patterns at different spatial locations. By simply upsampling the class activation map to the size of the input image, we can identify the image regions most relevant to the particular category
