@@ -14,6 +14,6 @@ Computationally, we arrive at the map as follows. Assume the input shape is $m \
 \item Then, the vector is arranged in the same shape as the input image. Denote this $w_{i,j,c}$, where $i \in \{1,2 \dots m\}, j \in \{1,2 \dots n\}$ correspond to the x-y directions, and $c$ to the channel.
 \item For all $i \in \{1,2 \dots m\}, j \in \{1,2 \dots n\}$, define $$\mathfrak{M}_{i,j} := max_c|w_{i,j,c}|$$
 \end{enumerate}
-Then, $\mathfrak{M}$ is the desired saliency map. 
+Then, $\mathfrak{M}$ is the desired saliency map. \\
 Positive gradients corresponds to the location of target object and Negative image gradients corresponds to the other objects of competing classes. 
-Since for the final output we use absolute value, saliency maps are not class discriminative.   
+Since for the final output we use absolute value, saliency maps are not class discriminative which means it cannot localize the category in the image.   
