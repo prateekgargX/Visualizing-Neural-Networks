@@ -1,6 +1,5 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
-% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
@@ -16,45 +15,16 @@
 \begin{document}
 
 \title{Visual Explanations for Deep NNs}
-%\thanks{Identify applicable funding agency here. If none, delete this.}
-
 
 \author{\IEEEauthorblockN{Siddhant Midha}
 \IEEEauthorblockA{\textit{Sophomore, Electrical Engg.} \\
 \textit{IIT Bombay}\\
-%City, Country \\
 \href{mailto:siddhantm@iitb.ac.in}{\texttt{siddhantm@iitb.ac.in}}}
 \and
 \IEEEauthorblockN{Prateek Garg}
 \IEEEauthorblockA{\textit{Sophomore, Electrical Engg.} \\
 \textit{IIT Bombay}\\
-%City, Country \\
 \href{mailto:siddhantm@iitb.ac.in}{\texttt{prateekgarg@iitb.ac.in}}}}
-%\and
-%\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
-%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} %\\
-%\textit{name of organization (of Aff.)}\\
-%City, Country \\
-%email address or ORCID}
-%\and
-%\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
-%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-%\textit{name of organization (of Aff.)}\\
-%City, Country \\
-%email address or ORCID}
-%\and
-%\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
-%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} %\\
-%\textit{name of organization (of Aff.)}\\
-%City, Country \\
-%email address or ORCID}
-%\and
-%\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
-%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} %\\
-%\textit{name of organization (of Aff.)}\\
-%City, Country \\
-%email address or ORCID}
-%}
 
 \maketitle
 
@@ -69,47 +39,9 @@ CNN, Saliency, Grad-CAM, Deconv
 \section{Introduction}
 There are two broad areas where an interpretation of the workings of neural networks proves useful - in the researcher's understanding, and as a proof of working to the consumer. We survey methods that facilitate the visualisation of the network, namely \textbf{Saliency Maps}, \textbf{Occlusion Sensitivity}, \textbf{Class Activation Maps} and \textbf{Deconvolution}. For some more insight, we also plot the learned \textbf{feature maps} at different locations in the network. The code can be found \href{https://github.com/prateekgargX/Visualizing-Neural-Networks}{here}.
 \section{Methods}
-
-\subsection{Saliency Maps}
-
-Let us review the method used by the authors in the original paper \cite{saliency}. Given a specific class, we query a Convolutional net about the spatial support of that particular class in the image. Formally, let $I$ be the image and let $\mathfrak{S}$ be the image space. We have the vectorizing function
-\[L: \mathfrak{S} \to \mathbb{R}^{k\times1}\]
-Thus $L(I)$ is the vectorized version of the image. With abuse of notation, let us denote this as $I$. Further for a class $c$ we have the score function
-\[S_c: \mathbb{R}^{k\times1} \to \mathbb{R}\]
-We consider the linear approximation,
-\[S_c(I) \approx w_c^TI + b_c \text{ , where, } w_c^T \in \mathbb{R}^{k\times1}, b_c \in \mathbb{R}\]
-Elementary calculus tells us that,
-\[w_c = \frac{\delta S_c}{\delta I}\]
-Now the authors claim that this matrix gives us an idea of which spatial locations the network is looking at while predicting the class to be $c$. This is backed by the intuition that the larger the derivative for a particular pixel, more the output is sensitive to that pixel. \\ 
-Computationally, we arrive at the map as follows. Assume the input shape is $m \times n$. \begin{enumerate}
-\item Firstly, the derivative vector is found by backpropagation.
-\item Then, the vector is arranged in the same shape as the input image. Denote this $w_{i,j,c}$, where $i \in \{1,2 \dots m\}, j \in \{1,2 \dots n\}$ correspond to the x-y directions, and $c$ to the channel.
-\item For all $i \in \{1,2 \dots m\}, j \in \{1,2 \dots n\}$, define $$\mathfrak{M}_{i,j} := max_c|w_{i,j,c}|$$
-\end{enumerate}
-Then, $\mathfrak{M}$ is the desired saliency map. 
-
-\subsection{Occlusion Sensitivity Maps}
-To answer the question of whether the model is really identifying the object while classifying it, this \cite{occlusion} paper uses occlusion maps. This serves to be a coarser technique which does not require backpropagation at all. Here, we perform a systematic occlusion of the input image with an occluding object of some fixed size and monitor the output of the classifier. If and when some main features of the object being identified are occluded, the probability of classification of that object drops sharply. 
-
-More formally, let our input image be $I \in \mathbb{R}^{m \times n \times c}$. Further, let $p \times q$ be the dimensions of the occlusion. We describe occlusion at the $(j,k)^{th}$ position as
-\[I[j:j+p-1][k:k+q-1][:] \leftarrow 0\]
-Finally, we prepare a map showing the probability of classification as a function of position of the occluder. This process is justified from natural intuition and it shows
-that the visualization genuinely corresponds to the image structure that stimulates that feature map. 
-
-\subsection{Class Activation Map (CAM)}
-A class activation map for a particular category indicates the discriminative image regions used by the CNN to identify that category. The authors of the paper \cite{CAM} define this in the following way. For a given image, let $f_k(x,y)$ represent the activation of unit $k$ in the last convolutional layer at spatial location $(x,y)$. Then, for the unit $k$ global average pooling is given as \[F_k := \sum_{(x,y)}f_k(x,y)\]
-Now say we have the final softmax layer. Then, for some class $c$, the input to the softmax $S_c$ is 
-\[S_c := \sum_k w_k^cF_k\]
-Intuitively, the importance of $F_k$ in computing $S_c$ is given by the weight $w_k^c$. We have,
-\begin{align}
-S_c &= \sum_kw_k^c\left(\sum_{(x,y)}f_k(x,y)\right) \\ 
-S_c &= \sum_{(x,y)}\sum_kw_k^cf_k(x,y) 
-\end{align}
-Then we define $\mathfrak{K}_c$, the class activation map for class $c$ as
-\[\mathfrak{K}_c(x,y) := \sum_kw_k^cf_k(x,y)\]
-Thus we claim that $\mathfrak{K}_c(x,y)$ indicates the importance of the activation at the spatial grid point $(x,y)$ leading to the activation of class $c$. This is because
-\[S_c = \sum_{(x,y)}\mathfrak{K}_c(x,y)\]
-Thus,The class activation map is simply a weighted linear sum of the presence of these visual patterns at different spatial locations. By simply upsampling the class activation map to the size of the input image, we can identify the image regions most relevant to the particular category
+\input{Saliency-Maps.tex}
+\input{Occlusion-Senstivity-Map.tex}
+\input{Class-Activation-Maps.tex}
 \section{Results}
 \section*{Acknowledgment}
 
