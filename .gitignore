@@ -1,4 +1,6 @@
-CAM
+*.ipynb_checkpoints
+*.png
+*.jpg
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
