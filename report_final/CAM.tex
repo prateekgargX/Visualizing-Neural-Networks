@@ -1,4 +1,4 @@
 \subsection{Class Activation Maps}
-We used pretrained network ResNet18 \cite{ResNet} from torch library. 
-Since it already has a Global Average Pooling Layer after convolutional Layer, we directly create a hook at the forward pass. The heatmap superposed with image is created using open-cv.
+We used pretrained network ResNet18 \cite{ResNet} from the \href{https://pytorch.org/}{torch} library. 
+Since it already has a Global Average Pooling Layer after convolutional Layer, we directly create a hook at the forward pass. The heatmap superposed with image is created using \href{https://opencv.org/}{opencv}.
 Other Networks which already have a GAP layer are Inception \cite{Inception}, SqueezeNet\cite{SqueezeNet}, and DensNet \cite{DensNet}.
