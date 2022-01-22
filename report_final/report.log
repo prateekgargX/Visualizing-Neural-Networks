@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.6)  22 JAN 2022 14:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.6)  22 JAN 2022 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,6 +350,59 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
 )
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count275
+\float@exts=\toks21
+\float@box=\box49
+\@float@everytoks=\toks22
+\@floatcapt=\box50
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip56
+\subfigcapskip=\skip57
+\subfigcaptopadj=\dimen173
+\subfigbottomskip=\skip58
+\subfigcapmargin=\dimen174
+\subfiglabelskip=\skip59
+\c@subfigure=\count276
+\c@lofdepth=\count277
+\c@subtable=\count278
+\c@lotdepth=\count279
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip60
+\subfig@bottom=\skip61
+)
+(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count280
+\c@Blindtext=\count281
+\c@blind@countparstart=\count282
+\blind@countxx=\count283
+\blindtext@numBlindtext=\count284
+\blind@countyy=\count285
+\c@blindlist=\count286
+\c@blindlistlevel=\count287
+\c@blindlist@level=\count288
+\blind@listitem=\count289
+\c@blind@listcount=\count290
+\c@blind@levelcount=\count291
+\blind@mathformula=\count292
+\blind@Mathformula=\count293
+\c@blind@randomcount=\count294
+\c@blind@randommax=\count295
+\c@blind@pangramcount=\count296
+\c@blind@pangrammax=\count297
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
@@ -370,36 +423,64 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 12.
+Package hyperref Info: Option `colorlinks' set `true' on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count275
-\l__pdf_internal_box=\box49
+\l__kernel_color_stack_int=\count298
+\l__pdf_internal_box=\box51
 )
-(./report.aux)
+(./report.aux
+
+LaTeX Warning: Label `fig:Ex1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Ex1' multiply defined.
+
+
+LaTeX Warning: Label `fig:Ex1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Ex1' multiply defined.
+
+
+LaTeX Warning: Label `fig:Ex3' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Ex3' multiply defined.
+
+
+LaTeX Warning: Label `fig:Ex4' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Ex4' multiply defined.
+
+
+LaTeX Warning: Label `fig:Defi' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 -- Lines per column: 56 (exact).
-\AtBeginShipoutBox=\box50
-Package hyperref Info: Link coloring ON on input line 15.
+\AtBeginShipoutBox=\box52
+Package hyperref Info: Link coloring ON on input line 19.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -409,11 +490,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count276
+\c@section@level=\count299
 )
-LaTeX Info: Redefining \ref on input line 15.
-LaTeX Info: Redefining \pageref on input line 15.
-LaTeX Info: Redefining \nameref on input line 15.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
 (./report.out) (./report.out)
 \@outlinefile=\write3
@@ -422,17 +503,17 @@ LaTeX Info: Redefining \nameref on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count277
-\scratchdimen=\dimen173
-\scratchbox=\box51
-\nofMPsegments=\count278
-\nofMParguments=\count279
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count280
-\MPscratchDim=\dimen174
-\MPnumerator=\count281
-\makeMPintoPDFobject=\count282
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count300
+\scratchdimen=\dimen175
+\scratchbox=\box53
+\nofMPsegments=\count301
+\nofMParguments=\count302
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count303
+\MPscratchDim=\dimen176
+\MPnumerator=\count304
+\makeMPintoPDFobject=\count305
+\everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -443,7 +524,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
-0.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -471,8 +552,77 @@ m/n/10 , where $\OML/cmm/m/it/10 i \OMS/cmsy/m/n/10 2
 mf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]) (./SM.tex) (./OSM.tex) (./CAM.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+]) (./SM.tex) (./OSM.tex) (./CAM.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+ []
+
+<./fig/CAM7.jpg, id=76, 501.875pt x 367.3725pt>
+File: ./fig/CAM7.jpg Graphic file (type jpg)
+<use ./fig/CAM7.jpg>
+Package pdftex.def Info: ./fig/CAM7.jpg  used on input line 10.
+(pdftex.def)             Requested size: 100.79846pt x 73.7815pt.
+<./fig/CAM6.jpg, id=77, 501.875pt x 376.40625pt>
+File: ./fig/CAM6.jpg Graphic file (type jpg)
+<use ./fig/CAM6.jpg>
+Package pdftex.def Info: ./fig/CAM6.jpg  used on input line 14.
+(pdftex.def)             Requested size: 100.79846pt x 75.5958pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+<./fig/CAM1.jpg, id=78, 1505.625pt x 1003.75pt>
+File: ./fig/CAM1.jpg Graphic file (type jpg)
+<use ./fig/CAM1.jpg>
+Package pdftex.def Info: ./fig/CAM1.jpg  used on input line 24.
+(pdftex.def)             Requested size: 100.79846pt x 67.19116pt.
+<./fig/CAM2.jpg, id=79, 1505.625pt x 1003.75pt>
+File: ./fig/CAM2.jpg Graphic file (type jpg)
+<use ./fig/CAM2.jpg>
+Package pdftex.def Info: ./fig/CAM2.jpg  used on input line 28.
+(pdftex.def)             Requested size: 100.79846pt x 67.19116pt.
+<./fig/CAM3.jpg, id=80, 501.875pt x 427.5975pt>
+File: ./fig/CAM3.jpg Graphic file (type jpg)
+<use ./fig/CAM3.jpg>
+Package pdftex.def Info: ./fig/CAM3.jpg  used on input line 32.
+(pdftex.def)             Requested size: 100.79846pt x 85.87683pt.
+<./fig/CAM4.jpg, id=81, 501.875pt x 427.5975pt>
+File: ./fig/CAM4.jpg Graphic file (type jpg)
+<use ./fig/CAM4.jpg>
+Package pdftex.def Info: ./fig/CAM4.jpg  used on input line 36.
+(pdftex.def)             Requested size: 100.79846pt x 85.87683pt.
+<./fig/CAM.jpg, id=82, 285.065pt x 178.6675pt>
+File: ./fig/CAM.jpg Graphic file (type jpg)
+<use ./fig/CAM.jpg>
+Package pdftex.def Info: ./fig/CAM.jpg  used on input line 47.
+(pdftex.def)             Requested size: 201.60077pt x 126.3559pt.
+<./fig/CAM5 .jpg, id=83, 501.875pt x 401.5pt>
+File: ./fig/CAM5 .jpg Graphic file (type jpg)
+<use ./fig/CAM5 .jpg>
+Package pdftex.def Info: ./fig/CAM5 .jpg  used on input line 51.
+(pdftex.def)             Requested size: 201.60077pt x 161.2833pt.
+) [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.57 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.57 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.57 
+      <./fig/CAM7.jpg> <./fig/CAM6.jpg> <./fig/CAM1.jpg> <./fig/CAM2.jpg> <./fi
+g/CAM3.jpg> <./fig/CAM4.jpg> <./fig/CAM.jpg> <./fig/CAM5 .jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 [][][]\OT1/ptm/m/n/8 Huang Et. al,"Densely Con-nected Con-vo-lu-tional Net-work
 s"
  []
@@ -488,21 +638,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
+[3
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 8F3542BA1AB7FDB3F0BD70A7BDA3CF6E;461.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
  ) 
 Here is how much of TeX's memory you used:
- 7881 strings out of 481239
- 118569 string characters out of 5920378
- 388367 words of memory out of 5000000
- 22970 multiletter control sequences out of 15000+600000
+ 8351 strings out of 481239
+ 125568 string characters out of 5920378
+ 397376 words of memory out of 5000000
+ 23402 multiletter control sequences out of 15000+600000
  565734 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,9n,37p,713b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -520,10 +676,10 @@ sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on report.pdf (2 pages, 139601 bytes).
+Output written on report.pdf (3 pages, 1008961 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
