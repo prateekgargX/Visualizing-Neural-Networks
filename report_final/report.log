@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.6)  22 JAN 2022 20:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.6)  22 JAN 2022 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -567,11 +567,6 @@ File: ./fig/CAM6.jpg Graphic file (type jpg)
 <use ./fig/CAM6.jpg>
 Package pdftex.def Info: ./fig/CAM6.jpg  used on input line 14.
 (pdftex.def)             Requested size: 100.79846pt x 75.5958pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
 <./fig/CAM1.jpg, id=78, 1505.625pt x 1003.75pt>
 File: ./fig/CAM1.jpg Graphic file (type jpg)
 <use ./fig/CAM1.jpg>
@@ -602,23 +597,27 @@ File: ./fig/CAM5 .jpg Graphic file (type jpg)
 <use ./fig/CAM5 .jpg>
 Package pdftex.def Info: ./fig/CAM5 .jpg  used on input line 51.
 (pdftex.def)             Requested size: 201.60077pt x 161.2833pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
+) [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.55 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.2
-}) has been already used, duplicate ignored
+l.54 \section
+             *{Acknowledgment}pdfTeX warning (ext4): destination with the same 
+identifier (name{figure.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.55 
-      <./fig/CAM7.jpg> <./fig/CAM6.jpg> <./fig/CAM1.jpg> <./fig/CAM2.jpg> <./fi
-g/CAM3.jpg> <./fig/CAM4.jpg>])
+l.54 \section
+             *{Acknowledgment}pdfTeX warning (ext4): destination with the same 
+identifier (name{figure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.54 \section
+             *{Acknowledgment} <./fig/CAM7.jpg> <./fig/CAM6.jpg> <./fig/CAM1.jp
+g> <./fig/CAM2.jpg> <./fig/CAM3.jpg> <./fig/CAM4.jpg> <./fig/CAM.jpg> <./fig/CA
+M5 .jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 [][][]\OT1/ptm/m/n/8 Huang Et. al,"Densely Con-nected Con-vo-lu-tional Net-work
 s"
@@ -636,15 +635,9 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
-[3pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
-has been already used, duplicate ignored
+[3
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.68 \end{document}
-                   
-
- <./fig/CAM.jpg> <./fig/CAM5 .jpg>]
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
@@ -660,7 +653,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
 Here is how much of TeX's memory you used:
  8351 strings out of 481239
  125568 string characters out of 5920378
- 396376 words of memory out of 5000000
+ 397376 words of memory out of 5000000
  23402 multiletter control sequences out of 15000+600000
  565734 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -679,7 +672,7 @@ sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on report.pdf (3 pages, 1009054 bytes).
+Output written on report.pdf (3 pages, 1009089 bytes).
 PDF statistics:
  182 PDF objects out of 1000 (max. 8388607)
  149 compressed objects within 2 object streams

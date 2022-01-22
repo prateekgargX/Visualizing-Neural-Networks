@@ -15,7 +15,7 @@ Other Networks which already have a GAP layer are Inception \cite{Inception}, Sq
     \caption[Short text]{Some Examples with images of Bees}
     \label{fig:Some_Examples}
 \end{figure}
-This method showed remarkable results even when the softmax output scores of competing classes were really skewed. \\
+This method showed remarkable results even when the softmax output scores of competing classes were really skewed.
 
 \begin{figure}[H]
     \centering
@@ -38,7 +38,7 @@ This method showed remarkable results even when the softmax output scores of com
     \label{fig:Defi}
 \end{figure}
 
-In case of multiple instances of target object, the performance suffers. It is not able to localise on each instance which suggests an improvement is needed
+In case of multiple instances of target object, the performance suffers. It is not able to localise well on each instance.
 
 \begin{figure}[H]
     \centering
@@ -53,3 +53,4 @@ In case of multiple instances of target object, the performance suffers. It is n
     \label{fig:Defi}
 \end{figure}
 
+CAM likely suffered from the use Global Average Pooling to compute weights. This might be improved by using a conventional pooling layer.   
