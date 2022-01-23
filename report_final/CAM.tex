@@ -2,7 +2,7 @@
 We used pretrained network ResNet18 \cite{ResNet} from the \href{https://pytorch.org/}{torch} library. 
 Since it already has a Global Average Pooling Layer after convolutional Layer, we directly create a hook at the forward pass. The heatmap superposed with image is created using \href{https://opencv.org/}{opencv}.
 Other Networks which already have a GAP layer are Inception \cite{Inception}, SqueezeNet\cite{SqueezeNet}, and DensNet \cite{DensNet}.\\
-
+For the labels, we used \cite{ILSVRC} dataset, a subset of ImageNet dataset available on Kaggle.
 \begin{figure}[H]
     \centering
     \subfigure[]{
@@ -19,19 +19,19 @@ This method showed remarkable results even when the softmax output scores of com
 
 \begin{figure}[H]
     \centering
-    \subfigure[]{
+    \subfigure[Golden Retriever \phantom{fdsfdsf} \phantom{fdsfdsf} Score=0.715]{
     \label{fig:Ex1}
     \includegraphics[width=.4\columnwidth]{CAM1.jpg}}
     \qquad
-    \subfigure[]{
+    \subfigure[Egyptian Mau \phantom{fdsfdsf} \phantom{fdsfdsf} Score=0.0021]{
     \label{fig:Ex1}
     \includegraphics[width=.4\columnwidth]{CAM2.jpg}}
     \qquad
-    \subfigure[]{
+    \subfigure[Ringlet, Score=0.539]{
     \label{fig:Ex3}
     \includegraphics[width=.4\columnwidth]{CAM3.jpg}}
     \qquad
-    \subfigure[]{
+    \subfigure[Bee, Score=0.005]{
     \label{fig:Ex4}
     \includegraphics[width=.4\columnwidth]{CAM4.jpg}}
     \caption[Short text]{CAM is class discriminative}
@@ -53,4 +53,4 @@ In case of multiple instances of target object, the performance suffers. It is n
     \label{fig:Defi}
 \end{figure}
 
-CAM likely suffered from the use Global Average Pooling to compute weights. This might be improved by using a conventional pooling layer.   
+CAM likely suffered from the use of Global Average Pooling to compute weights. This might be improved by using a conventional pooling layer.   

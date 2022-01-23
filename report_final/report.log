@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.6)  22 JAN 2022 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.6)  23 JAN 2022 16:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -552,72 +552,175 @@ m/n/10 , where $\OML/cmm/m/it/10 i \OMS/cmsy/m/n/10 2
 mf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]) (./SM.tex) (./OSM.tex) (./CAM.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--5
+]) (./SM.tex
+<./fig/2im.png, id=80, 263.98625pt x 252.945pt>
+File: ./fig/2im.png Graphic file (type png)
+<use ./fig/2im.png>
+Package pdftex.def Info: ./fig/2im.png  used on input line 6.
+(pdftex.def)             Requested size: 100.79846pt x 96.57939pt.
+<./fig/2.png, id=82, 263.98625pt x 252.945pt>
+File: ./fig/2.png Graphic file (type png)
+<use ./fig/2.png>
+Package pdftex.def Info: ./fig/2.png  used on input line 9.
+(pdftex.def)             Requested size: 100.79846pt x 96.57939pt.
+<./fig/3im.png, id=83, 263.98625pt x 252.945pt>
+File: ./fig/3im.png Graphic file (type png)
+<use ./fig/3im.png>
+Package pdftex.def Info: ./fig/3im.png  used on input line 16.
+(pdftex.def)             Requested size: 100.79846pt x 96.57939pt.
+<./fig/3.png, id=84, 263.98625pt x 252.945pt>
+File: ./fig/3.png Graphic file (type png)
+<use ./fig/3.png>
+Package pdftex.def Info: ./fig/3.png  used on input line 19.
+(pdftex.def)             Requested size: 100.79846pt x 96.57939pt.
+<./fig/4im.png, id=85, 263.98625pt x 252.945pt>
+File: ./fig/4im.png Graphic file (type png)
+<use ./fig/4im.png>
+Package pdftex.def Info: ./fig/4im.png  used on input line 26.
+(pdftex.def)             Requested size: 100.79846pt x 96.57939pt.
+<./fig/4.png, id=86, 263.98625pt x 252.945pt>
+File: ./fig/4.png Graphic file (type png)
+<use ./fig/4.png>
+Package pdftex.def Info: ./fig/4.png  used on input line 29.
+(pdftex.def)             Requested size: 100.79846pt x 96.57939pt.
+) (./OSM.tex
+<./fig/occim1.png, id=87, 263.98625pt x 252.945pt>
+File: ./fig/occim1.png Graphic file (type png)
+<use ./fig/occim1.png>
+Package pdftex.def Info: ./fig/occim1.png  used on input line 8.
+(pdftex.def)             Requested size: 151.20154pt x 144.87488pt.
+<./fig/occ1.png, id=88, 261.97874pt x 248.93pt>
+File: ./fig/occ1.png Graphic file (type png)
+<use ./fig/occ1.png>
+Package pdftex.def Info: ./fig/occ1.png  used on input line 11.
+(pdftex.def)             Requested size: 100.79846pt x 95.77567pt.
+<./fig/occ1dash.png, id=89, 251.94125pt x 250.9375pt>
+File: ./fig/occ1dash.png Graphic file (type png)
+<use ./fig/occ1dash.png>
+Package pdftex.def Info: ./fig/occ1dash.png  used on input line 14.
+(pdftex.def)             Requested size: 100.79846pt x 100.39618pt.
 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<./fig/CAM7.jpg, id=76, 501.875pt x 367.3725pt>
+ [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.17 L
+      et us look at another image of a dog with a man, and see which regions...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.17 L
+      et us look at another image of a dog with a man, and see which regions...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.17 L
+      et us look at another image of a dog with a man, and see which regions...
+ <./fig/2im.png> <./fig/2.png> <./fig/3im.png> <./fig/3.png> <./fig/4im.png> <.
+/fig/4.png>]
+<./fig/occim2.png, id=114, 263.98625pt x 252.945pt>
+File: ./fig/occim2.png Graphic file (type png)
+<use ./fig/occim2.png>
+Package pdftex.def Info: ./fig/occim2.png  used on input line 21.
+(pdftex.def)             Requested size: 151.20154pt x 144.87488pt.
+<./fig/occ2.png, id=115, 261.97874pt x 248.93pt>
+File: ./fig/occ2.png Graphic file (type png)
+<use ./fig/occ2.png>
+Package pdftex.def Info: ./fig/occ2.png  used on input line 24.
+(pdftex.def)             Requested size: 100.79846pt x 95.77567pt.
+<./fig/occ2dash.png, id=116, 251.94125pt x 250.9375pt>
+File: ./fig/occ2dash.png Graphic file (type png)
+<use ./fig/occ2dash.png>
+Package pdftex.def Info: ./fig/occ2dash.png  used on input line 27.
+(pdftex.def)             Requested size: 100.79846pt x 100.39618pt.
+) (./CAM.tex
+<./fig/CAM7.jpg, id=124, 501.875pt x 367.3725pt>
 File: ./fig/CAM7.jpg Graphic file (type jpg)
 <use ./fig/CAM7.jpg>
 Package pdftex.def Info: ./fig/CAM7.jpg  used on input line 10.
 (pdftex.def)             Requested size: 100.79846pt x 73.7815pt.
-<./fig/CAM6.jpg, id=77, 501.875pt x 376.40625pt>
+<./fig/CAM6.jpg, id=125, 501.875pt x 376.40625pt>
 File: ./fig/CAM6.jpg Graphic file (type jpg)
 <use ./fig/CAM6.jpg>
 Package pdftex.def Info: ./fig/CAM6.jpg  used on input line 14.
 (pdftex.def)             Requested size: 100.79846pt x 75.5958pt.
-<./fig/CAM1.jpg, id=78, 1505.625pt x 1003.75pt>
+<./fig/CAM1.jpg, id=126, 1505.625pt x 1003.75pt>
 File: ./fig/CAM1.jpg Graphic file (type jpg)
 <use ./fig/CAM1.jpg>
 Package pdftex.def Info: ./fig/CAM1.jpg  used on input line 24.
 (pdftex.def)             Requested size: 100.79846pt x 67.19116pt.
-<./fig/CAM2.jpg, id=79, 1505.625pt x 1003.75pt>
+
+Underfull \hbox (badness 4832) in paragraph at lines 24--24
+[]\OT1/ptm/m/n/8 (a) Golden Re-triever []
+ []
+
+<./fig/CAM2.jpg, id=127, 1505.625pt x 1003.75pt>
 File: ./fig/CAM2.jpg Graphic file (type jpg)
 <use ./fig/CAM2.jpg>
 Package pdftex.def Info: ./fig/CAM2.jpg  used on input line 28.
 (pdftex.def)             Requested size: 100.79846pt x 67.19116pt.
-<./fig/CAM3.jpg, id=80, 501.875pt x 427.5975pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]\OT1/ptm/m/n/8 (b) Egyp-tian Mau []
+ []
+
+<./fig/CAM3.jpg, id=128, 501.875pt x 427.5975pt>
 File: ./fig/CAM3.jpg Graphic file (type jpg)
 <use ./fig/CAM3.jpg>
 Package pdftex.def Info: ./fig/CAM3.jpg  used on input line 32.
 (pdftex.def)             Requested size: 100.79846pt x 85.87683pt.
-<./fig/CAM4.jpg, id=81, 501.875pt x 427.5975pt>
+<./fig/CAM4.jpg, id=129, 501.875pt x 427.5975pt>
 File: ./fig/CAM4.jpg Graphic file (type jpg)
 <use ./fig/CAM4.jpg>
 Package pdftex.def Info: ./fig/CAM4.jpg  used on input line 36.
 (pdftex.def)             Requested size: 100.79846pt x 85.87683pt.
-<./fig/CAM.jpg, id=82, 285.065pt x 178.6675pt>
+<./fig/CAM.jpg, id=130, 285.065pt x 178.6675pt>
 File: ./fig/CAM.jpg Graphic file (type jpg)
 <use ./fig/CAM.jpg>
 Package pdftex.def Info: ./fig/CAM.jpg  used on input line 47.
 (pdftex.def)             Requested size: 201.60077pt x 126.3559pt.
-<./fig/CAM5 .jpg, id=83, 501.875pt x 401.5pt>
+<./fig/CAM5 .jpg, id=131, 501.875pt x 401.5pt>
 File: ./fig/CAM5 .jpg Graphic file (type jpg)
 <use ./fig/CAM5 .jpg>
 Package pdftex.def Info: ./fig/CAM5 .jpg  used on input line 51.
 (pdftex.def)             Requested size: 201.60077pt x 161.2833pt.
-) [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}
-) has been already used, duplicate ignored
+
+Underfull \vbox (badness 8189) has occurred while \output is active []
+
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.54 \section
-             *{Acknowledgment}pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.2}) has been already used, duplicate ignored
+l.55 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.54 \section
-             *{Acknowledgment}pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.3}) has been already used, duplicate ignored
+l.55 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.6
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.54 \section
-             *{Acknowledgment} <./fig/CAM7.jpg> <./fig/CAM6.jpg> <./fig/CAM1.jp
-g> <./fig/CAM2.jpg> <./fig/CAM3.jpg> <./fig/CAM4.jpg> <./fig/CAM.jpg> <./fig/CA
-M5 .jpg>]
+l.55 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.55 
+      <./fig/occim1.png> <./fig/occ1.png> <./fig/occ1dash.png> <./fig/occim2.pn
+g> <./fig/occ2.png> <./fig/occ2dash.png> <./fig/CAM7.jpg> <./fig/CAM6.jpg> <./f
+ig/CAM1.jpg> <./fig/CAM2.jpg> <./fig/CAM3.jpg> <./fig/CAM4.jpg>])
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 [][][]\OT1/ptm/m/n/8 Huang Et. al,"Densely Con-nected Con-vo-lu-tional Net-work
 s"
@@ -634,27 +737,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
-[3
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) 
+has been already used, duplicate ignored
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.70 \end{document}
+                    <./fig/CAM.jpg> <./fig/CAM5 .jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 8F3542BA1AB7FDB3F0BD70A7BDA3CF6E;461.
+(rerunfilecheck)             Checksum: 4E1D2880CF513365C4BA0A304DF0377E;599.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 8351 strings out of 481239
- 125568 string characters out of 5920378
- 397376 words of memory out of 5000000
- 23402 multiletter control sequences out of 15000+600000
+ 8450 strings out of 481239
+ 126968 string characters out of 5920378
+ 396434 words of memory out of 5000000
+ 23466 multiletter control sequences out of 15000+600000
  565734 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,9n,37p,713b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -672,10 +779,10 @@ sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on report.pdf (3 pages, 1009089 bytes).
+Output written on report.pdf (4 pages, 1653214 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 249 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
